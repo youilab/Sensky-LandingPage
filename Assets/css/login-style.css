@@ -66,13 +66,6 @@ body
   color: #06315c
 }
 
-.labels i:nth-child(1)
-{
-  color: #06315c;
-  margin-bottom: 2em;
-}
-
-
 #myBtn
 {
   cursor: pointer;
@@ -267,5 +260,21 @@ body
   }
   .wrapper .form .inputfield.terms{
     flex-direction: row;
+  }
+
+  .labels
+  {
+  margin: 0;
+  margin-bottom: 1.5em;
+  }
+
+  .wrapper .form .inputfield .btn
+  {
+    margin-left: 20vw;
+  }
+
+  #login-wrapper
+  {
+    margin-left: 0;
   }
 }

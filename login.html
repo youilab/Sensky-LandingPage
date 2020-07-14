@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>SENSKY | Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/css/style.css">
+  <link rel="icon" href="Assets/1x/sen.ico">
+</head>
+
+<body>
+<video autoplay muted loop id="myVideo">
+        <source src="Assets/1x/Multimedia2.mp4" type="video/mp4">
+</video>
+<!-- partial:index.partial.html -->
+<div class="wrapper" id="login-wrapper">
+    <div class="title">
+      Inicia Sesión
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>Correo:</label>
+          <input type="text" class="input">
+       </div>  
+        <div class="inputfield">
+          <label>Contraseña:</label>
+          <input type="text" class="input">
+       </div>  
+      <div class="inputfield">
+        <input type="submit" value="Ingresar" class="btn" id="myBtn">
+      </div>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+  <div class="wrapper">
+    <span class="close">&times;</span>
+    <div class="title">
+      Regístrate
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>Nombre(s):</label>
+          <input type="text" class="input">
+       </div>  
+        <div class="inputfield">
+          <label>Apellídos:</label>
+          <input type="text" class="input">
+       </div>  
+       <div class="inputfield">
+          <label>Correo:</label>
+          <input type="text" class="input">
+       </div> 
+       <div class="inputfield">
+          <label>Contraseña:</label>
+          <input type="password" class="input">
+       </div>  
+      <div class="inputfield">
+          <label>Repetir contraseña:</label>
+          <input type="password" class="input">
+       </div> 
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Términos y Condiciones</p>
+       </div> 
+      <div class="inputfield">
+        <input type="submit" value="Aceptar" class="btn">
+      </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- partial -->
+  <script type="text/javascript">
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  </script>
+</body>
+</html>

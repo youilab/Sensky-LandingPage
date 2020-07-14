@@ -294,7 +294,6 @@ footer
     #damage > img
 	{
 		position: absolute;
-		top: 310vh;
 		left: 55vw;
 	}
 }
@@ -331,7 +330,7 @@ footer
     #damage > img
 	{
 		position: absolute;
-		top: 368vh;
+		top: 190em;
 		left: 45vw;
 	}
 	

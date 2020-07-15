@@ -52,9 +52,10 @@
           <label>Apellídos:</label>
           <input type="text" class="input">
        </div>  
-       <div class="inputfield">
+       <div id="email-div" class="inputfield">
           <label>Correo:</label>
-          <input type="text" class="input">
+          <input type="text" id="email-input" class="input" onkeydown="validation()">
+          <span id="email-text"></span>
        </div> 
        <div class="inputfield">
           <label>Contraseña:</label>

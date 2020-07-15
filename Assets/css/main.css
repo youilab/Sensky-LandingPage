@@ -13,6 +13,10 @@ html
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+/***********************************
+** Navbar styles
+***********************************/
+
 #nav
 {
 	margin-top: 1em;
@@ -59,6 +63,10 @@ html
 {
 	color: black;
 }
+
+/***********************************
+** Intro Styles
+***********************************/
 
 h3
 {
@@ -145,6 +153,10 @@ button
 	width: 40%;
 }
 
+/***********************************
+** Second Section Styles
+***********************************/
+
 .text-title
 {
 	color: #558cc2;
@@ -214,6 +226,10 @@ button
 	line-height: 1.6;
 }
 
+/***********************************
+** Third Section Styles
+***********************************/
+
 #damage
 {
 	background-color: #558cc2;
@@ -256,6 +272,10 @@ button
 	font-weight: lighter;
 }
 
+/***********************************
+** Footer Styles
+***********************************/
+
 footer
 {
 	background-color: #bedcfa;
@@ -263,10 +283,37 @@ footer
 	padding-top: 2em;
 }
 
+#suscribe-footer
+{
+	display: inline-grid;
+	background-color: #06315c;
+	border-radius: 10px;
+	width: 30%;
+}
+
+#suscribe-footer > label
+{
+	color: white;
+}
+
+#suscribe-footer > input
+{
+	height: 4em;
+}
+
 .redes-footer
 {
 	padding: 1% 0 1% 0;
 }
+
+.copyright
+{
+	font-size: 0.9em;
+}
+
+/***********************************
+** Media Queries
+***********************************/
 
 /* Extra large devices (desktops, 800px and up) */
 @media only screen and (min-width: 972px) and (max-width:1600px) 
@@ -297,6 +344,7 @@ footer
 		left: 55vw;
 	}
 }
+
 /* Large devices (desktops, 800px and up) */
 @media only screen and (min-width: 710px) and (max-width:970px) 
 {

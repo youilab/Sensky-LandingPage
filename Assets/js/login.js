@@ -23,3 +23,35 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function validation()
+{
+	var form = document.getElementById("email-div")
+	var email = document.getElementById("email-input").value;
+	var text = document.getElementById("email-text");
+
+	var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+	if(email.match(pattern))
+	{
+		form.classList.add("valid");
+		form.classList.remove("invalid");
+		text.innerHTML = "Correo válido"
+		text.style.color = "#6bb323";
+		text.style.fontSize = "0.9em";
+	}
+	else
+	{
+		form.classList.remove("valid");
+		form.classList.add("invalid");
+		text.innerHTML = "Ingresa un correo válido"
+		text.style.color = "#ff0000";
+	}
+	if(email == "")
+	{
+		form.classList.remove("valid");
+		form.classList.remove("invalid");
+		text.innerHTML = ""
+		text.style.color = "#00ff00";
+	}
+}

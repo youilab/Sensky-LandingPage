@@ -10,6 +10,52 @@ body
   padding: 0 10px;
 }
 
+button
+{
+  background-color: #fff;
+  border: none;
+  color: white;
+  padding: 0.7em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8em;
+  border-radius: 12px;
+}
+
+/***********************************
+** Nav Styles
+***********************************/
+
+#nav
+{
+  position: absolute;
+  padding: 0 3% 0 3%;
+  top: 5%;
+  right: 19%;
+}
+
+#nav a 
+{
+  font-size: 1.5em;
+}
+
+#bt1 a
+{
+  text-decoration: none;
+  color: #06315c;
+}
+#bt1:hover
+{
+  background-color: #558cc2;
+  transition: all .5 ease;
+}
+
+#bt1:hover > a
+{
+  color: white;
+}
+
 /***********************************
 ** Intro Styles
 ***********************************/
@@ -73,10 +119,11 @@ body
 
 .labels i
 {
-  color: #06315c
+  color: #06315c;
+  text-decoration: none;
 }
 
-#myBtn
+.myBtn
 {
   cursor: pointer;
 }
@@ -287,7 +334,7 @@ body
 
 .wrapper .form .inputfield .btn
 {
-  width: 50%;
+  width: 30%;
    padding: 8px 10px;
   font-size: 15px; 
   border: 0px;
@@ -296,7 +343,7 @@ body
   cursor: pointer;
   border-radius: 10px;
   outline: none;
-  margin-left: 7vw;
+  margin-left: 35%;
 }
 
 .wrapper .form .inputfield .btn:hover
@@ -344,8 +391,10 @@ body
 
   .wrapper .form .inputfield .btn
   {
+    width: 50%;
     margin-left: 20vw;
   }
+
 
   #login-wrapper
   {

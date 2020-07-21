@@ -280,7 +280,7 @@ footer
 {
 	background-color: #bedcfa;
 	text-align: center;
-	padding-top: 2em;
+	padding-top: 6em;
 }
 
 #suscribe-footer
@@ -288,17 +288,25 @@ footer
 	display: inline-grid;
 	background-color: #06315c;
 	border-radius: 10px;
-	width: 30%;
+	width: 28%;
+	position: absolute;
+	margin-top: -10%;
+	margin-left: -13%;
 }
 
 #suscribe-footer > label
 {
 	color: white;
+	font-size: 1.3em;
 }
 
 #suscribe-footer > input
 {
-	height: 4em;
+	height: 3em;
+	border-radius: 7px;
+	border-color: white;
+	margin: 0 0 7% 10%;
+	width: 80%;
 }
 
 .redes-footer
@@ -343,6 +351,13 @@ footer
 		position: absolute;
 		left: 55vw;
 	}
+
+	#suscribe-footer
+	{
+		position: absolute;
+		margin-top: -10%;
+		margin-left: -13%;
+	}
 }
 
 /* Large devices (desktops, 800px and up) */
@@ -375,11 +390,22 @@ footer
     	left: 45vw;
     }
 
+    #damage
+    {
+    	height: 120%;
+    }
+
     #damage > img
 	{
 		position: absolute;
-		top: 190em;
-		left: 45vw;
+		margin-top: 160%;
+	}
+
+	#suscribe-footer
+	{
+		position: absolute;
+		margin-top: -20%;
+		margin-left: -13%;
 	}
 	
 }
@@ -428,4 +454,31 @@ footer
     	top: 84vh;
     	left: 39vw;
     }
+
+    #suscribe-footer
+	{
+		position: absolute;
+		margin-top: -20%;
+		margin-left: -13%;
+	}
+}
+
+@media only screen and (max-width: 700px) { /* Responsividad de la pantalla */
+	#suscribe-footer
+	{
+		position: absolute;
+		margin-top: -45%;
+		margin-left: -25%;
+		width: 50%;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  
+{
+	#damage > img
+	{
+		position: absolute;
+		margin-top: 120%;
+		margin-left: -20%;
+	}
 }
